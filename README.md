@@ -1,2 +1,4 @@
-# Hospital-management-system---monorepo
-Full-stack hospital management system with doctor and pharmacist portals, staff dashboards, and appointment scheduling, built iteratively as a monorepo.
+in the name of the father son and holy spirit
+
+
+in development 
