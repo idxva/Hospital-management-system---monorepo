@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaCare Hospital & Health System — World-class healthcare services, modern patient portals, and 24/7 emergency care.">
+  <title>NovaCare Health System | Advanced Clinical Excellence & Patient Portals</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Separate Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Script with defer -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Emergency Live Alert Bar -->
+  <aside class="emergency-banner" aria-label="Emergency notification">
+    <div class="container">
+      <div>
+        <span class="pulse-indicator"></span>
+        <strong>Level-1 Trauma Center Active:</strong> 24/7 Emergency Admissions open. Average triage response time: 8 mins.
+      </div>
+      <div>
+        <span>Emergency Hotline: <strong>+1 (800) 911-CARE</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Website Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo / Brand Identity -->
+        <a href="#hero" class="brand-logo" aria-label="NovaCare Health System Home">
+          <div class="brand-icon" aria-hidden="true">
+            <img src="palladium-healthcare-logo.svg" alt="Palladium Healthcare" height="60">
+          </div>
+          <span>Palladium Helathcare</span>
+        </a>
+
+        <!-- Semantic Navigation Bar -->
+
+
+        <!-- Header Actions: Theme Switcher & Primary CTA -->
+        <div class="header-actions">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light or dark theme" title="Toggle theme">
+            <span id="themeIcon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+          </button>
+
+          <button class="btn btn-primary btn-sm" data-open-modal="appointment">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Book Visit</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Landmark Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Intro Copy -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Accredited Center of Excellence</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Compassionate care meets <span class="text-gradient">modern medical precision.</span>
+            </h1>
+
+            <p class="hero-lead">
+              Access top specialists, coordinate outpatient treatment, and monitor diagnostics seamlessly. Whether you are a patient, physician, or staff member, our unified portal powers everyday healthcare.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-open-modal="appointment">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <line x1="19" y1="8" x2="19" y2="14"></line>
+                  <line x1="22" y1="11" x2="16" y2="11"></line>
+                </svg>
+                <span>Schedule Consultation</span>
+              </button>
+              <a href="#portals" class="btn btn-secondary">
+                <span>Access Portals</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Status Sidebar Card -->
+          <aside class="hero-status-card" aria-label="Real-time Hospital Operations Status">
+            <div class="hero-status-header">
+              <h3>Facility Operations</h3>
+              <span class="live-pill">
+                <span class="pulse-indicator" style="background:#10b981;"></span>
+                Live Updates
+              </span>
+            </div>
+
+            <div class="status-list">
+              <div class="status-item">
+                <span class="label">Emergency Room (ER)</span>
+                <span class="val status-open">Open 24/7 • Full Capacity</span>
+              </div>
+              <div class="status-item">
+                <span class="label">Outpatient Clinics</span>
+                <span class="val status-open">Mon–Sat • 08:00 – 20:00</span>
+              </div>
+              <div class="status-item">
+                <span class="label">Digital Pathology & Scans</span>
+                <span class="val status-open">Active • Online Delivery</span>
+              </div>
+              <div class="status-item">
+                <span class="label">Inpatient Visiting Window</span>
+                <span class="val status-busy">15:00 – 18:30 (Badge Req.)</span>
+              </div>
+              <div class="status-item">
+                <span class="label">Central Pharmacy</span>
+                <span class="val status-open">Open 24 Hours</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="hero-metrics">
+          <div class="metric-box">
+            <div class="metric-number">99.4%</div>
+            <div class="metric-label">Patient Satisfaction Rate</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">48+</div>
+            <div class="metric-label">Specialized Departments</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">120K+</div>
+            <div class="metric-label">Annual Consultations</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-number">&lt; 10 min</div>
+            <div class="metric-label">Average Emergency Triage</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unified Portals Hub Section -->
+    <section class="portals-section" id="portals">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Role-Based Access</span>
+          <h2 class="section-title">Select Your Digital Portal</h2>
+          <p class="section-subtitle">Streamlined tools customized for patients, medical professionals, and facility administration.</p>
+        </header>
+
+        <div class="portals-grid">
+          <!-- Patient Portal -->
+          <article class="portal-card">
+            <div class="portal-card-banner patient">
+              <div class="portal-avatar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="portal-card-content">
+              <h3 class="portal-role-title">Patient Portal</h3>
+              <p class="portal-desc">Manage your appointments, download official lab reports, and refill prescriptions securely from home.</p>
+              <ul class="portal-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Instant Doctor Appointments
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Lab & MRI Diagnostic Reports
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Prescription History & Refills
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-block" data-portal-role="Patient">Enter Patient Portal</button>
+            </div>
+          </article>
+
+          <!-- Doctor Portal -->
+          <article class="portal-card">
+            <div class="portal-card-banner doctor">
+              <div class="portal-avatar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"></path>
+                  <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"></path>
+                  <circle cx="20" cy="10" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="portal-card-content">
+              <h3 class="portal-role-title">Physician & Clinician</h3>
+              <p class="portal-desc">Review clinical appointments, update EHR case histories, and issue digital pharmacy orders on rounds.</p>
+              <ul class="portal-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Daily Outpatient Roster
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Direct EHR Charting & History
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  E-Prescription Dispense Sign-off
+                </li>
+              </ul>
+              <button class="btn btn-secondary btn-block" data-portal-role="Physician">Enter Doctor Portal</button>
+            </div>
+          </article>
+
+          <!-- Administrator Portal -->
+          <article class="portal-card">
+            <div class="portal-card-banner admin">
+              <div class="portal-avatar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="portal-card-content">
+              <h3 class="portal-role-title">Hospital Administrator</h3>
+              <p class="portal-desc">Manage ICU & bed allocations, staff scheduling, department billing, and regulatory compliance logs.</p>
+              <ul class="portal-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Real-time Bed Occupancy Matrix
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Staff Shifts & Roster Scheduling
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Insurance Claims & Audit Ledger
+                </li>
+              </ul>
+              <button class="btn btn-secondary btn-block" data-portal-role="Administrator">Enter Admin Portal</button>
+            </div>
+          </article>
+
+          <!-- Pharmacy & Diagnostics Portal -->
+          <article class="portal-card">
+            <div class="portal-card-banner pharmacy">
+              <div class="portal-avatar-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path>
+                  <path d="m8.5 8.5 7 7"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="portal-card-content">
+              <h3 class="portal-role-title">Pharmacy & Lab</h3>
+              <p class="portal-desc">Process clinical prescriptions, manage medical inventory batches, and upload authorized diagnostic readings.</p>
+              <ul class="portal-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Automated Medication Dispensing
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Sample Barcode & Analyzer Sync
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Pharmaceutical Inventory Reorder
+                </li>
+              </ul>
+              <button class="btn btn-secondary btn-block" data-portal-role="Pharmacy">Enter Pharmacy Portal</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medical Specialties & Services -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Clinical Departments</span>
+          <h2 class="section-title">Comprehensive Healthcare Services</h2>
+          <p class="section-subtitle">Dedicated specialist divisions equipped with cutting-edge medical technology and expert clinicians.</p>
+        </header>
+
+        <div class="services-grid">
+          <!-- Cardiology -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- heart body -->
+                <path d="M10.5 21.5C6 18.5 3.5 15 3.5 11.5 3.5 8.8 5.3 7.5 7.5 7.5H16.5c2.4 0 4 1.8 4 4.5 0 3.5-5.5 7.5-10 9.5Z"></path>
+  <!-- aorta arch -->
+                <path d="M12 7.5V3.5a2 2 0 0 1 4 0v4"></path>
+  <!-- vena cava -->
+                <path d="M8.5 7.5V3"></path>
+  <!-- septum line -->
+                <path d="M12 11c0 3.5 1 6 2.5 8"></path>
+              </svg>
+            </div>
+            <h3>Cardiology & Vascular Care</h3>
+            <p>From advanced catheterization labs to preventative cardiovascular screening, our heart team provides 24/7 acute intervention.</p>
+            <span class="service-badge">Catheterization Lab • Echo • ICU</span>
+          </article>
+
+          <!-- Neurology -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="cyan" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-5.04z"></path>
+                <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-5.04z"></path>
+              </svg>
+            </div>
+            <h3>Neurology & Neurosurgery</h3>
+            <p>Specialized neurocritical care, stroke rapid-response units, and minimally invasive spinal surgery facilities.</p>
+            <span class="service-badge">Stroke Unit • EEG • Microsurgery</span>
+          </article>
+
+          <!-- Diagnostics -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+              </svg>
+            </div>
+            <h3>Advanced Radiology & Imaging</h3>
+            <p>Ultra-fast 3T MRI, low-dose 128-slice CT scans, 4D Ultrasound, and digital mammography with fast online report retrieval.</p>
+            <span class="service-badge">3T MRI • 128-Slice CT • PET Scan</span>
+          </article>
+
+          <!-- Pediatrics -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="violet" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="5"></circle>
+                <path d="M20 21a8 8 0 1 0-16 0"></path>
+              </svg>
+            </div>
+            <h3>Pediatrics & Neonatal Care</h3>
+            <p>Child-friendly outpatient care, pediatric intensive care (PICU), and Level-III NICU for our youngest patients.</p>
+            <span class="service-badge">NICU Level-III • Child Wellness</span>
+          </article>
+
+          <!-- Emergency -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3>Trauma & Urgent Resuscitation</h3>
+            <p>Certified Level-1 emergency department with dedicated trauma surgical suites, ambulance heliport, and triage.</p>
+            <span class="service-badge">24/7 Immediate Response</span>
+          </article>
+
+          <!-- Robotic Surgery -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Minimally Invasive Surgery</h3>
+            <p>State-of-the-art robotic laparoscopic surgical systems enabling smaller incisions, reduced pain, and faster recovery times.</p>
+            <span class="service-badge">Robotic Assistance • Day Surgery</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient Journey Workflow -->
+    <section class="journey-section" id="journey">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Step-by-Step Experience</span>
+          <h2 class="section-title">The NovaCare Patient Journey</h2>
+          <p class="section-subtitle">A seamless, dignified, and digitally integrated clinical experience from home to discharge.</p>
+        </header>
+
+        <div class="journey-steps">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <h3>Digital Check-In & Scheduling</h3>
+            <p>Choose your preferred physician and appointment slot online. Receive calendar reminders, preparation instructions, and pre-fill medical history prior to arrival.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <h3>Comprehensive Clinical Care</h3>
+            <p>Arrive with priority registration. Consult with board-certified physicians, undergo coordinated on-site diagnostics, and receive clear treatment plans.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <h3>Continuous Digital Follow-up</h3>
+            <p>Review lab findings, diagnostic imaging, and physician directives securely via the portal. Access 24/7 digital chat for prescription queries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Appointment Booking Modal -->
+  <div class="modal-overlay" id="appointmentModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">Book Clinical Consultation</h3>
+        <button class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="appointmentForm">
+          <div class="form-group">
+            <label class="form-label" for="patientName">Full Patient Name</label>
+            <input type="text" id="patientName" class="form-control" placeholder="e.g. Eleanor Vance" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="patientPhone">Contact Number</label>
+              <input type="tel" id="patientPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="departmentSelect">Department</label>
+              <select id="departmentSelect" class="form-control" required>
+                <option value="">Select Specialty</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="General Medicine">General Medicine</option>
+                <option value="Diagnostics">Diagnostics & Radiology</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="appointmentDate">Preferred Date</label>
+              <input type="date" id="appointmentDate" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="appointmentTime">Preferred Time</label>
+              <select id="appointmentTime" class="form-control" required>
+                <option value="Morning (09:00 - 12:00)">Morning (09:00 - 12:00)</option>
+                <option value="Afternoon (13:00 - 16:00)">Afternoon (13:00 - 16:00)</option>
+                <option value="Evening (17:00 - 19:30)">Evening (17:00 - 19:30)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="symptomNotes">Brief Reason for Visit (Optional)</label>
+            <textarea id="symptomNotes" class="form-control" rows="3" placeholder="Describe symptoms or routine checkup notes..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Confirm Appointment Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Real-Time Toast Notification -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="10"></circle>
+      <polyline points="12 6 12 12 14 14"></polyline>
+    </svg>
+    <span class="toast-text">Notification message</span>
+  </div>
+
+  <!-- Semantic Footer Landmark -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <h4>NovaCare Health System</h4>
+          <p>Delivering high-standard clinical care, academic medical research, and compassionate patient rehabilitation for over 35 years.</p>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>742 Medical Center Blvd, Health City, HC 54102</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Emergency: +1 (800) 911-CARE | General: +1 (800) 555-NOVA</span>
+          </div>
+        </div>
+
+        <!-- Portals Links -->
+        <div>
+          <div class="footer-heading">Access Portals</div>
+          <ul class="footer-links">
+            <li><a href="#portals" data-portal-role="Patient">Patient Portal Login</a></li>
+            <li><a href="#portals" data-portal-role="Physician">Doctor & Clinical EHR</a></li>
+            <li><a href="#portals" data-portal-role="Administrator">Administrative Console</a></li>
+            <li><a href="#portals" data-portal-role="Pharmacy">Pharmacy & Lab Orders</a></li>
+            <li><a href="#appointmentModal" data-open-modal="appointment">Online Telehealth</a></li>
+          </ul>
+        </div>
+
+        <!-- Clinical Divisions -->
+        <div>
+          <div class="footer-heading">Specialties</div>
+          <ul class="footer-links">
+            <li><a href="#services">Cardiology & Heart</a></li>
+            <li><a href="#services">Neuroscience</a></li>
+            <li><a href="#services">Pediatrics & Neonatal</a></li>
+            <li><a href="#services">Diagnostic Imaging</a></li>
+            <li><a href="#services">Robotic Surgery</a></li>
+            <li><a href="#services">Oncology Care</a></li>
+          </ul>
+        </div>
+
+        <!-- Operating Hours & Accreditation -->
+        <div>
+          <div class="footer-heading">Operating Hours</div>
+          <ul class="footer-links">
+            <li><span>Emergency / Trauma: <strong>24/7 / 365 Days</strong></span></li>
+            <li><span>Outpatient Clinics: Mon–Sat 8:00–20:00</span></li>
+            <li><span>Diagnostics: Mon–Sun 7:00–22:00</span></li>
+            <li><span>Visiting Hours: Daily 15:00–18:30</span></li>
+          </ul>
+          <div style="margin-top: 1.25rem;">
+            <span class="service-badge" style="background:#1e293b; color:#38bdf8;">JCI Accredited • ISO 9001:2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NovaCare Health System. All rights reserved. Separated semantic HTML & CSS architecture.</p>
+        <p>Patient Privacy Policy &bull; Terms of Healthcare Service &bull; HIPAA Compliant</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
