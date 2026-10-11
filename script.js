@@ -49,23 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 2. Mobile Navigation Menu
-  const menuToggleBtn = document.getElementById('menuToggleBtn');
-  const mainNav = document.getElementById('mainNav');
 
-  if (menuToggleBtn && mainNav) {
-    menuToggleBtn.addEventListener('click', () => {
-      const expanded = menuToggleBtn.getAttribute('aria-expanded') === 'true';
-      menuToggleBtn.setAttribute('aria-expanded', String(!expanded));
-      mainNav.classList.toggle('open');
-    });
-
-    // Close mobile nav when clicking a link
-    mainNav.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mainNav.classList.remove('open');
-        menuToggleBtn.setAttribute('aria-expanded', 'false');
-      });
-    });
   }
 
   // 3. Appointment Modal Controls

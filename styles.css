@@ -47,7 +47,7 @@
 
   /* Layout & Sizing */
   --container-max-width: 1240px;
-  --header-height: 76px;
+  --header-height: 70px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 18px;
@@ -152,8 +152,8 @@ a:hover {
   z-index: 100;
   height: var(--header-height);
   background-color: var(--bg-surface-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(9px);
   border-bottom: 1px solid var(--border-light);
   display: flex;
   align-items: center;
@@ -168,25 +168,17 @@ a:hover {
   width: 100%;
 }
 
-.brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--text-main);
-  letter-spacing: -0.02em;
-}
+
 
 .brand-icon {
-  width: 40px;
-  height: 40px;
+  width: 119px;
+  height: 119px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  border-left: 5px ;
   display: grid;
   place-items: center;
   color: #ffffff;
-  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.35);
+
 }
 
 .main-nav {
@@ -311,42 +303,10 @@ a:hover {
 }
 
 /* --- Live Alert & Triage Bar --- */
-.emergency-banner {
-  background-color: var(--color-emergency-bg);
-  border-bottom: 1px solid rgba(225, 29, 72, 0.2);
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  color: #9f1239;
-  font-weight: 600;
-}
 
-[data-theme="dark"] .emergency-banner {
-  color: #fecdd3;
-}
 
-.emergency-banner .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
 
-.pulse-indicator {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--color-emergency);
-  margin-right: 0.4rem;
-  animation: pulse 1.8s infinite;
-}
 
-@keyframes pulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.7); }
-  70% { transform: scale(1.15); box-shadow: 0 0 0 6px rgba(225, 29, 72, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(225, 29, 72, 0); }
-}
 
 /* --- Hero Section --- */
 .hero-section {
@@ -974,22 +934,17 @@ a:hover {
 
 @media (max-width: 768px) {
   .site-header {
-    height: auto;
+    height: 4.5rem;
     padding: 0.75rem 0;
   }
 
-  .main-nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--bg-surface);
-    border-bottom: 1px solid var(--border-light);
-    flex-direction: column;
-    padding: 1rem 1.5rem;
-    box-shadow: var(--shadow-lg);
+  .brand-icon {
+    width: 100px;
+    height: 90px;
   }
+
+
+
 
   .main-nav.open {
     display: flex;
